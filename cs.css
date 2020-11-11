@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#div{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    width: 500px;
+    height: 300px;
+}
+#div1
+{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:orangered;
+}
+.btn{
+    margin-top: 60px;
+   
+}
+.in{
+  
+    width:200px;
+    height: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+.div{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+}

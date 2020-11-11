@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Web Page Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/cs.css">
+<script src="/javascript.js"></script>
+
+<!-- style -->
+<style>
+ 
+</style>
+</head>
+
+<!-- body -->
+<body>
+  <div id="div1">
+  <h1>ALL IN ONE TABLE</TABLE></h1>
+  </div>
+  <div id="div">
+      <textarea cols="30" rows="2" id="in" placeholder="Helooo!!!">
+      </textarea>
+<input type="button" class="btn" value="Click Me To Enter" onclick="ent()">
+<br><br>
+
+
+
+<div class="div" id="one" onmouseover="c()" onmouseout="c()">1). Tell me a joke.</div>
+<br>
+<div class="div" id="two" onmouseover="d()" onmouseout="d()">2). Random name generator</div>
+<br>
+<div id="three" class="div" onmouseover="e()" onmouseout="e()">3).Love calculator</div>
+</div>
+
+
+
+  <!-- script -->
+  <script>
+
+    var arrJokes=["How does a computer get drunk? A. It takes screenshots.","We'll we'll we'll...if it isn't autocorrect.","Autocorrect has become my worst enema."];
+    var randomArr=["Binod","Vedant","Yuvraj","Vishal","Vaibhav","Amit","Shiv"];
+
+var be=true;
+function c()
+{
+  if(be)
+  {
+  document.getElementById("one").style="color:red; font-size:20px";
+  be=false;
+  }
+  else
+  {
+  document.getElementById("one").style="color:black";
+  be=true;
+  }
+}
+
+
+var be2=true;
+function d()
+{
+  if(be2)
+  {
+  document.getElementById("two").style="color:red; font-size:20px";
+  be2=false;
+  }
+  else
+  {
+  document.getElementById("two").style="color:black";
+  be2=true;
+  }
+}
+
+
+var be3=true;
+function e()
+{
+  if(be3)
+  {
+  document.getElementById("three").style="color:red; font-size:20px";
+  be3=false;
+  }
+  else
+  {
+  document.getElementById("three").style="color:black";
+  be3=true;
+  }
+}
+
+
+function ent()
+{ 
+  var num;
+  num=prompt("Enter a number");
+  if(num==1)
+{
+  
+  function jokes()
+{
+  var rannum=((Math.floor(Math.random()*3)));
+  var jo= document.getElementById("in");
+  jo.style="color:orange; font-size:20px";
+  jo.value=`Joke = ${arrJokes[rannum]}`;
+}
+   jokes();
+}
+
+else if(num==2)
+{
+ ranName(); 
+function ranName()
+{
+  var rannum=((Math.floor(Math.random()*7)));
+  var jo= document.getElementById("in");
+  jo.style="color:orange; font-size:20px";
+  jo.value=`Random Name = ${randomArr[rannum]}`;
+}
+}
+
+else if(num==3)
+{
+  var name1=prompt("Enter First Persons name");
+  var name2=prompt("Enter Second Persons name");
+  function love()
+  {
+    var rannum=((Math.floor(Math.random()*7)));
+    var jo= document.getElementById("in");
+    jo.style="color:orange; font-size:20px";
+    jo.value=`Love between ${name1} and ${name2} = ${rannum}%`;
+  }
+  love();
+}
+else{
+  alert("enter a valid number");
+}
+
+
+
+} 
+
+
+
+  </script> 
+
+
+ </body>
+
+
+</html>
